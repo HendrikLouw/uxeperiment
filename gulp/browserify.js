@@ -5,7 +5,7 @@ var watchify = require('watchify');
 var browserify = require('browserify');
 
 gulp.task('watch', function() {
-  var bundler = watchify(browserify('./app/js/app.js', watchify.args));
+  var bundler = watchify(browserify('./app/src/app.js', watchify.args));
 
   // Optionally, you can apply transforms
   // and other configuration options on the
@@ -23,4 +23,4 @@ gulp.task('watch', function() {
   }
 
   return rebundle();
-})
+});
