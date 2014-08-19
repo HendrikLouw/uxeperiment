@@ -1,6 +1,9 @@
 // Karma configuration
 // Generated on Tue Aug 19 2014 22:05:45 GMT+0200 (SAST)
 
+var testFiles = 'app/test/**/*.js';
+var srcFiles = 'app/src/**/*.js';
+
 module.exports = function(config) {
   config.set({
 
@@ -15,21 +18,25 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'app/src/**/*.js',
-      'app/test/**/*.js'
+      srcFiles,
+      testFiles
     ],
 
 
     // list of files to exclude
-    exclude: [
-    ],
+    exclude: [],
 
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      testFiles: 'coverage'
     },
 
+    coverageReporter: {
+      type: 'lcov',
+      dir: 'coverage/'
+    },
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
