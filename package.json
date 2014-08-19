@@ -1,0 +1,11 @@
+{
+  "name": "uxeperiment",
+  "description": "Testing UX in the browser",
+  "author": "Hendrik Louw <hflouw@gmail.com",
+  "dependencies": {
+    "gulp": ""
+  },
+  "devDependencies": {
+  },
+  "engine": "node >= 0.4.1"
+}
