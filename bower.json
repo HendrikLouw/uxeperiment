@@ -1,0 +1,15 @@
+{
+  "name": "uxeperiment",
+  "version": "0.0.0",
+  "authors": [
+    "Hendrik Louw <hflouw@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
