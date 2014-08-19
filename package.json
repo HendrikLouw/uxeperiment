@@ -6,6 +6,11 @@
     "gulp": ""
   },
   "devDependencies": {
+    "gulp-util": "~3.0.0",
+    "vinyl-source-stream": "~0.1.1",
+    "watchify": "~1.0.2",
+    "browserify": "~5.10.0",
+    "brfs": "~1.2.0"
   },
   "engine": "node >= 0.4.1"
 }
