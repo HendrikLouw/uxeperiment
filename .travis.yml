@@ -1,3 +1,8 @@
 language: node_js
 node_js:
   - "0.10"
+addons:
+  code_climate:
+    repo_token: "48c2c8dcaf392257ffd80a0e34c4d6a3540b7f30724743540988b37e8df199f9"
+after_script:
+  - cat "coverage/PhantomJS 1.9.7 (Mac OS X)/lcov.info" | codeclimate
